@@ -1,4 +1,4 @@
-import { Button, IconsContainer } from "~/components"
+import { Button, IconsContainer, Photo } from "~/components"
 import { BsGithub, BsLinkedin, BsMedium } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
 
@@ -6,8 +6,12 @@ export default function Home() {
   return (
     <section className="h-screen w-screen flex items-center justify-center">
       <div className="border-cyan-300 border border-opacity-10 px-20 py-12 rounded-md shadow-2xl max-w-screen-sm text-center">
-          <p className="text-white text-2xl">
+          <Photo />
+          <p className="text-white text-3xl">
             Hermando Thiago
+          </p>
+          <p className="text-white py-1">
+            Fullstack Typescript
           </p>
           <IconsContainer />
           <div>
