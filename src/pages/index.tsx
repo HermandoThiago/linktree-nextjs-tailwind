@@ -1,4 +1,6 @@
 import { Button } from "~/components"
+import { BsGithub, BsLinkedin } from "react-icons/bs"
+import { MdEmail } from "react-icons/md"
 
 export default function Home() {
   return (
@@ -8,13 +10,22 @@ export default function Home() {
             Hermando Thiago
           </p>
           <div>
-            <Button link="https://github.com/HermandoThiago">
+            <Button 
+              link="https://github.com/HermandoThiago"
+              icon={<BsGithub size={20}/>}  
+            >
               Github
             </Button>
-            <Button link="https://www.linkedin.com/in/hermando-thiago/">
+            <Button 
+              link="https://www.linkedin.com/in/hermando-thiago/"
+              icon={<BsLinkedin size={20} />}
+            >
               Linkedin
             </Button>
-            <Button link="">
+            <Button 
+              link=""
+              icon={<MdEmail size={20} />}
+            >
               Email
             </Button>
           </div>
