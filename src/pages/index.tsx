@@ -1,5 +1,5 @@
-import { Button } from "~/components"
-import { BsGithub, BsLinkedin } from "react-icons/bs"
+import { Button, IconsContainer } from "~/components"
+import { BsGithub, BsLinkedin, BsMedium } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
 
 export default function Home() {
@@ -9,14 +9,7 @@ export default function Home() {
           <p className="text-white text-2xl">
             Hermando Thiago
           </p>
-          <div className="flex justify-center items-center flex-row text-white text-4xl py-5 space-x-4 w-full">
-            <i className="devicon-typescript-plain colored"></i>
-            <i className="devicon-nextjs-original"></i>
-            <i className="devicon-nestjs-plain colored"></i>
-            <i className="devicon-docker-plain colored"></i>
-            <i className="devicon-postgresql-plain colored"></i>
-            <i className="devicon-python-plain colored"></i>
-          </div>
+          <IconsContainer />
           <div>
             <Button 
               link="https://github.com/HermandoThiago"
@@ -35,6 +28,12 @@ export default function Home() {
               icon={<MdEmail size={20} />}
             >
               Email
+            </Button>
+            <Button 
+              link="https://medium.com/@hermandodev"
+              icon={<BsMedium size={20} />}
+            >
+              Medium
             </Button>
           </div>
       </div>
