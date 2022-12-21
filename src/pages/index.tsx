@@ -5,12 +5,12 @@ import { MdEmail } from "react-icons/md"
 export default function Home() {
   return (
     <section className="h-screen w-screen flex items-center justify-center">
-      <div className="border-cyan-300 border border-opacity-10 px-20 py-12 rounded-md shadow-2xl max-w-screen-sm text-center">
+      <div className="border-cyan-300 border border-opacity-10 py-12 rounded-md shadow-2xl max-w-screen-sm text-center">
           <Photo />
           <p className="text-white text-3xl">
             Hermando Thiago
           </p>
-          <p className="text-white py-1">
+          <p className="text-white py-1 text-lg">
             Fullstack Typescript
           </p>
           <IconsContainer />
@@ -28,7 +28,7 @@ export default function Home() {
               Linkedin
             </Button>
             <Button 
-              link=""
+              link="mailto:hermandodev@gmail.com"
               icon={<MdEmail size={20} />}
             >
               Email
