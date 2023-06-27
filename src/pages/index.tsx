@@ -9,7 +9,7 @@ import {
 
 export default function Home() {
   return (
-    <section className="h-screen w-screen flex items-center justify-center flex-col px-4">
+    <section className="h-full w-screen flex items-center justify-center flex-col px-4">
       <div className="h-full w-full max-w-[500px] flex justify-center flex-col">
         <div className="flex items-center justify-between">
           <h3 className="text-lg">Hermando Thiago</h3>
