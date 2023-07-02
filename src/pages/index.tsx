@@ -9,8 +9,8 @@ import {
 
 export default function Home() {
   return (
-    <section className="h-full w-screen flex items-center justify-center flex-col px-4">
-      <div className="h-full w-full max-w-[500px] flex justify-center flex-col">
+    <section className="h-screen overflow-x-hidden flex items-center justify-center px-4 bg-base-200">
+      <div className="h-screen w-full max-w-[500px] flex justify-center flex-col">
         <div className="flex items-center justify-between">
           <h3 className="text-lg">Hermando Thiago</h3>
         </div>
@@ -26,9 +26,7 @@ export default function Home() {
           </p>
 
           <Link href="https://wa.me/5584998681388" target="_blank">
-            <button className="btn btn-secondary mt-10">
-              Entrar em contato
-            </button>
+            <button className="btn btn-accent mt-10">Entrar em contato</button>
           </Link>
 
           <Title text="Link úteis" classes="text-xl mt-10" />
