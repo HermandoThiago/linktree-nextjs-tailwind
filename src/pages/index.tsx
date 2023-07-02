@@ -8,6 +8,9 @@ import {
 } from "react-icons/bs";
 
 export default function Home() {
+  const buttonStyles =
+    "flex items-center justify-center py-3 bg-white hover:bg-base-200 hover:-translate-y-1 duration-150 backdrop-blur-lg bg-opacity-5 rounded-md text-accent font-bold gap-4";
+
   return (
     <section className="h-screen overflow-x-hidden flex items-center justify-center px-4 bg-base-200">
       <div className="h-screen w-full max-w-[500px] flex justify-center flex-col">
@@ -31,11 +34,11 @@ export default function Home() {
 
           <Title text="Link úteis" classes="text-xl mt-10" />
 
-          <div className="flex flex-col w-full gap-6">
+          <div className="flex flex-col w-full gap-4">
             <Link
               href="https://www.linkedin.com/in/hermando-thiago/"
               target="_blank"
-              className="btn bg-slate-800 hover:bg-slate-900 border-0 mt-6"
+              className={buttonStyles}
             >
               <BsLinkedin className="h-6 w-6 text-blue-500" />
               Linkedin
@@ -44,7 +47,7 @@ export default function Home() {
             <Link
               href="https://wa.me/5584998681388"
               target="_blank"
-              className="btn bg-slate-800 hover:bg-slate-900 border-0"
+              className={buttonStyles}
             >
               <BsWhatsapp className="h-6 w-6 text-green-500" />
               Whatsapp
@@ -53,7 +56,7 @@ export default function Home() {
             <Link
               href="https://personal-portfolio-theta-wheat.vercel.app/"
               target="_blank"
-              className="btn bg-slate-800 hover:bg-slate-900 border-0"
+              className={buttonStyles}
             >
               <BsFillKanbanFill className="h-6 w-6 text-secondary-focus" />
               Portfólio
@@ -61,7 +64,7 @@ export default function Home() {
             <Link
               href="https://medium.com/@hermandodev"
               target="_blank"
-              className="btn bg-slate-800 hover:bg-slate-900 border-0"
+              className={buttonStyles}
             >
               <BsMedium className="h-6 w-6 text-white" />
               Medium
